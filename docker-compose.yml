@@ -5,6 +5,16 @@ version: '3'
 name: react_starter_kit
 
 services:
+# Node is used to execute the React code.
+  node:
+    image: node:18
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - 3000:3000
+    command: "yarn dev"
   # Keycloak is an OpenID-Connect IdP (Identity Provider) that is easy
   # to set up. It mocks out that feature in the react-starter-kit application,
   # allowing testing with arbitrary users and groups. See further
