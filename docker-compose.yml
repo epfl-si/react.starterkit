@@ -28,6 +28,7 @@ services:
       - "127.0.0.1:8080:8080"
     volumes:
       - ./keycloak/import:/opt/keycloak/data/import
+      - ./keycloak/themes:/opt/keycloak/themes
   # MariaDB is used by Keycloak for persistence. The react-starter-kit application
   # itself uses sqlite in development (which unfortunately, is not an
   # option for Keycloak at the moment).

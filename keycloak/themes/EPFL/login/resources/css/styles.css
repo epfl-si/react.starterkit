@@ -1,0 +1,23 @@
+@import url('https://web2018.epfl.ch/6.2.3/css/elements.min.css');
+/*https://epfl-si.github.io/elements/#/organisms/form*/
+.login-pf body {
+    background: #F5F5F5;
+}
+#kc-header-wrapper {
+    color: #212121;
+}
+.card-pf {
+    border-color: #B51F1F;
+}
+.pf-c-button.pf-m-primary {
+    background-color: #FF0000;
+}
+.pf-c-button.pf-m-primary:hover {
+    background-color: #B51F1F;
+}
+.pf-c-form-control:focus {
+    border-bottom-color: #FF0000;
+}
+.pf-m-error {
+    color: #FF0000;
+}
