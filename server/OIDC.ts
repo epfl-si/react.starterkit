@@ -22,6 +22,21 @@ async function checkTokenAndUpsertUser (options: Options) : Promise<LoginStatus>
     return { userId }
 }
 
+// Publish the new fields that `checkTokenAndUpsertUser` added to the database.
+// ⚠ We must discern whether this is a good idea!
+// The Meteor server doesn't really need the personal identifying data. The cached copy it has can become stale.
+Meteor.publish(null, function () {
+    if (! this.userId) return
+    return Meteor.users.find({
+      _id: this.userId
+    }, {
+      fields: {
+        given_name: 1,
+        family_name: 1
+      }
+    });
+  })
+
 let _issuer: Issuer | undefined = undefined;
 
 async function issuer() {
