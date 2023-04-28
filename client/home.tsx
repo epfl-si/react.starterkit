@@ -7,7 +7,7 @@ import { Accounts } from 'meteor/accounts-base'
 import { useTracker } from 'meteor/react-meteor-data'
 import { Meteor } from 'meteor/meteor'
 import '../imports/types/UserInfo'
-import { BrowserRouter, Switch, Route, Routes, Link } from "@epfl/epfl-sti-react-library/node_modules/react-router-dom";
+import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 
 
 console.log(Route)
