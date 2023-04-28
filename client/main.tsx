@@ -6,5 +6,5 @@ import Home from './home';
 Meteor.startup(() => {
   const container = document.getElementById('react-target');
   const root = createRoot(container!);
-  root.render(<Home />);
+  root.render(<Home/>);
 });

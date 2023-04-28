@@ -27,6 +27,51 @@
     "realmRoles" : [ "default-roles-react-starter-kit" ],
     "notBefore" : 0,
     "groups" : [ "/react-starter-kit_acces_lecture" ]
+  },
+  {
+    "id" : "e6378058-94ad-4d54-9874-d415402e41fc",
+    "username" : "toto",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Toto",
+    "lastName" : "Tutu",
+    "credentials" : [ {
+      "id" : "7cace295-3610-44eb-bb9e-7084ff2aa020",
+      "type" : "password",
+      "userLabel" : "The password is “demo”",
+      "createdDate" : 1682603662834,
+      "secretData" : "{\"value\":\"9GoEWH2mc9KKvPiihQDQiC6mMzkJKrzjUL2XNBbMb8c=\",\"salt\":\"vW3dTqkZkISjVTUmqmwA4A==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-react-starter-kit" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, 
+  {
+    "id" : "c0fee901-c949-45dd-b211-f24fa722da0f",
+    "createdTimestamp" : 1682672281638,
+    "username" : "withoutgroups",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Without",
+    "lastName" : "Groups",
+    "credentials" : [ {
+      "id" : "2d8d3b71-41db-42bc-8116-9a6192ebe874",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1682673163469,
+      "secretData" : "{\"value\":\"zoGQLoI2is267LIrcAnRWHwHxnY9ybiT4Uc53uNF1U0=\",\"salt\":\"4qROm9abpzNLQwLaqIYlNw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-react-starter-kit" ],
+    "notBefore" : 0,
+    "groups" : [ ]
   } ],
   "clients" : [
     {
